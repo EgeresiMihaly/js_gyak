@@ -19,4 +19,37 @@ const cube = number => number **3;
 console.log(cube(3));
 
 
+// Write a function called "getMax" that takes an array of numbers as an argument and returns the maximum number.
+function getMax(szamTomb) {
+    if (!Array.isArray(szamTomb) || szamTomb.length === 0) {
+        return "Érvénytelen bemenet. Kérlek, adj meg egy nem üres számtömböt.";
+    }
+    let maxSzam = szamTomb[0];
+    for (let i = 1; i < szamTomb.length; i++) {
+        if (szamTomb[i] > maxSzam) {
+            maxSzam = szamTomb[i];
+        }
+    }
+    return `A maximális szám a tömbben: ${maxSzam}`;
+}
 
+const tomb = [10, 5, 8, 20, 15];
+console.log(getMax(tomb));
+
+function calculateAverage(numbersArray) {
+    if (!Array.isArray(numbersArray) || numbersArray.length === 0) {
+        return "Invalid input. Please provide a non-empty array of numbers.";
+    }
+
+    let sum = 0;
+    for (let i = 0; i < numbersArray.length; i++) {
+        sum += numbersArray[i];
+    }
+
+    const average = sum / numbersArray.length;
+    return `The average of the numbers in the array is: ${average}`;
+}
+
+// Example usage:
+const myNumbers = [10, 20, 30, 40, 50];
+console.log(calculateAverage(myNumbers));
