@@ -53,3 +53,18 @@ function calculateAverage(numbersArray) {
 // Example usage:
 const myNumbers = [10, 20, 30, 40, 50];
 console.log(calculateAverage(myNumbers));
+
+// Write a function called "capitalize" that takes a string as an argument and returns the capitalized version.
+
+function capitalize(string){
+    let words = string.split(" ");
+    for (let i = 0; i < words.length; i++) {
+        words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    }
+    return words.join(" ");
+}
+
+
+
+console.log(capitalize("hello world")); // "Hello World"
+console.log(capitalize("this is a test")); // "This Is A Test"
