@@ -20,4 +20,3 @@ console.log(cube(3));
 
 
 
-//sdsad
