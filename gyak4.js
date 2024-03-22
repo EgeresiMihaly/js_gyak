@@ -64,7 +64,21 @@ function capitalize(string){
     return words.join(" ");
 }
 
-
-
 console.log(capitalize("hello world")); // "Hello World"
 console.log(capitalize("this is a test")); // "This Is A Test"
+
+//Write a function called "reverseString", which takes a string as an argument and returns the reverse version. 
+// Ebbe kissé belekavarodtam 
+
+function reverseString(string){
+    let characters = string.split(" ");
+    let reversedCharacters = characters.reverse();
+    let reverseStr = reversedCharacters.join('')
+
+    return reverseStr;
+}
+
+let originalString = "hello";
+let reversString = reverseString(originalString);
+console.log("Eredeti string:", originalString);
+console.log("Fordított string:", reversString);
