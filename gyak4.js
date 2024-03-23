@@ -71,7 +71,7 @@ console.log(capitalize("this is a test")); // "This Is A Test"
 // Ebbe kissé belekavarodtam 
 
 function reverseString(string){
-    let characters = string.split(" ");
+    let characters = string.split('');
     let reversedCharacters = characters.reverse();
     let reverseStr = reversedCharacters.join('')
 
@@ -82,3 +82,14 @@ let originalString = "hello";
 let reversString = reverseString(originalString);
 console.log("Eredeti string:", originalString);
 console.log("Fordított string:", reversString);
+
+
+//Write an arrow function called "isPalindrome" that takes a string as an argument and returns true if it's a palindrome, otherwise false.
+
+const isPalindrome = str =>{
+    const reversedStr = str.split('').reverse().join('');
+    return str === reversedStr;
+}
+console.log(isPalindrome('radar')); // Várt eredmény: true
+console.log(isPalindrome('hello')); // Várt eredmény: false
+
