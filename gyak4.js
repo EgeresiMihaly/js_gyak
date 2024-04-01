@@ -93,3 +93,38 @@ const isPalindrome = str =>{
 console.log(isPalindrome('radar')); // Várt eredmény: true
 console.log(isPalindrome('hello')); // Várt eredmény: false
 
+//Write a function called "countVowels" that takes a string as an argument and returns the number of vowels.
+// itt lesz kérdésem
+
+const countVowels = str => {
+    const vowels = 'aeiouAEIOU';
+    let vowelCount = 0;
+
+    for(let i = 0; i < str.length; i++){
+        if (vowels.includes(str[i])) {
+            vowelCount++;
+        }
+    }
+
+    return vowelCount;
+}
+
+
+const inputString = "Javascript";
+const vowelsCount = countVowels(inputString);
+console.log("A megadott szövegben lévő magánhangzók száma:", vowelsCount);
+
+//Write a function called "factorial" that takes a number as an argument and returns its factorial.
+
+const factorial = number =>{
+    let result = 1; 
+    for(let i=1; i <= number; i++){
+        result *= i;
+    }
+    return result;
+}
+
+console.log(factorial(5));  // Várható eredmény: 120
+console.log(factorial(3));  // Várható eredmény: 6
+console.log(factorial(0));  // Várható eredmény: 1
+

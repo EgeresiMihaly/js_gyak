@@ -37,5 +37,3 @@ let car = {
 
 let favoritePainting = "Leonardo da Vinci: Mona Lisa";
 
-
-//fewjknleawkj
