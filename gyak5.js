@@ -16,13 +16,13 @@ console.log(circumference)
 
 // Increment the variable "partyGuests" by 5.
 let partyGuests = 0;
-partyGuests = partyGuests + 5;
+partyGuests += + 5;
 console.log(partyGuests) 
 
 // Decrement the variable "stockQuantity" by 1.
 
 let stockQuantity = 0;
-stockQuantity = stockQuantity -1;
+stockQuantity += -1;
 console.log(stockQuantity)
 
 // Calculate the total cost for buying 3 apples at $1.50 each.
@@ -47,3 +47,9 @@ const initialBalance = 1000;
 
 const remainingBalance = initialBalance - afterSpending;
 console.log("The remaining balance is: " + remainingBalance + " $");
+
+// Increment the variable "hoursWorked" by 0.5.
+
+let hoursWorked = 0;
+hoursWorked +=0.5;
+console.log(hoursWorked);
