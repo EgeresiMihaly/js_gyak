@@ -33,3 +33,17 @@ let totalConst = apples*quantity;
 console.log(totalConst)
 
 //  Calculate the average speed of a car that travels 240 miles in 4 hours.
+
+const distance = 240;
+const time = 4;
+const averageSpeed = distance / time;
+console.log( "The average speed of the car is: " + averageSpeed + " mph");
+
+
+// Calculate the remaining balance after spending $200 from an initial balance of $1000
+
+const afterSpending = 200;
+const initialBalance = 1000;
+
+const remainingBalance = initialBalance - afterSpending;
+console.log("The remaining balance is: " + remainingBalance + " $");
