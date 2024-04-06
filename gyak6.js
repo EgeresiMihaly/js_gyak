@@ -10,3 +10,6 @@ if(number >0){
 else{
     console.log(number + " zero")
 }
+
+// Write an if-else statement to check if a person aged 64.5 is eligible for a senior discount (age 65 or older)
+
