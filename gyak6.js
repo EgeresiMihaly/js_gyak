@@ -19,8 +19,15 @@ const age = 64.5;
 // Nyugdíjas kedvezmény 65 éves kor felett
 const seniorAge = 65;
 
+// Ellenőrizzük, hogy a személy jogosult-e a nyugdíjas kedvezményre
 if (age >= seniorAge) {
-    console.log("A személy jogosult a nyugdíjas kedvezményre.");
-  } else {
-    console.log("A személy nem jogosult a nyugdíjas kedvezményre.");
-  }
+  console.log("A személy jogosult a nyugdíjas kedvezményre.");
+} else {
+  console.log("A személy nem jogosult a nyugdíjas kedvezményre.");
+}
+
+//  Write a ternary operator to determine if 2023 is a leap year or not.
+
+
+
+
