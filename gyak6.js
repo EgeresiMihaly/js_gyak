@@ -13,3 +13,14 @@ else{
 
 // Write an if-else statement to check if a person aged 64.5 is eligible for a senior discount (age 65 or older)
 
+// Felhasználó által megadott életkor
+const age = 64.5;
+
+// Nyugdíjas kedvezmény 65 éves kor felett
+const seniorAge = 65;
+
+if (age >= seniorAge) {
+    console.log("A személy jogosult a nyugdíjas kedvezményre.");
+  } else {
+    console.log("A személy nem jogosult a nyugdíjas kedvezményre.");
+  }
