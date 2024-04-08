@@ -38,7 +38,7 @@ let year = 2023;
 
 let password = "vmoaeASDF123421";
 
-if (password.length > 8 && 
+if (password.length > 8 &&
     password.match(/[A-Z]/) && 
     password.match(/[a-z]/) && 
     password.match(/[^a-zA-Z0-9]/)) {
