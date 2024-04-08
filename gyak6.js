@@ -33,3 +33,41 @@ let year = 2023;
 
 
 
+// Write an if-else statement to check if the password: "vmoaeASDF123421" meets these criterias:
+//- length > 8, contains uppercase, contains lowercase and contains special characters
+
+let password = "vmoaeASDF123421";
+
+if (password.length > 8 && 
+    password.match(/[A-Z]/) && 
+    password.match(/[a-z]/) && 
+    password.match(/[^a-zA-Z0-9]/)) {
+    console.log("A jelszó megfelel a követelményeknek.");
+} else {
+    console.log("A jelszó nem felel meg a követelményeknek.");
+}
+
+
+let password1 = "vmoaeASDF123421";
+
+// Megvizsgáljuk a jelszó hosszát
+if (password1.length > 8) {
+    // Megvizsgáljuk, tartalmaz-e kisbetűket
+    if (/[a-z]/.test(password1)) {
+        // Megvizsgáljuk, tartalmaz-e nagybetűket
+        if (/[A-Z]/.test(password1)) {
+            // Megvizsgáljuk, tartalmaz-e speciális karaktereket
+            if (/[!@#$%^&*()_+{}\[\]:;<>,.?~\-]/.test(password1)) {
+                console.log("A jelszó megfelel a kritériumoknak.");
+            } else {
+                console.log("A jelszó nem tartalmaz speciális karaktereket.");
+            }
+        } else {
+            console.log("A jelszó nem tartalmaz nagybetűket.");
+        }
+    } else {
+        console.log("A jelszó nem tartalmaz kisbetűket.");
+    }
+} else {
+    console.log("A jelszó hossza nem megfelelő (legalább 9 karakter).");
+}
