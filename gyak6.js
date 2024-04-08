@@ -28,6 +28,8 @@ if (age >= seniorAge) {
 
 //  Write a ternary operator to determine if 2023 is a leap year or not.
 
+let year = 2023;
+
 
 
 
