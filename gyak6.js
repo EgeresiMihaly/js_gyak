@@ -47,27 +47,23 @@ if (password.length > 8 &&
     console.log("A jelszó nem felel meg a követelményeknek.");
 }
 
+// Írj egy if-else utasítást annak ellenőrzésére, hogy 25.01 12 és 25 között van-e.
 
-let password1 = "vmoaeASDF123421";
+const num = 25.01;
 
-// Megvizsgáljuk a jelszó hosszát
-if (password1.length > 8) {
-    // Megvizsgáljuk, tartalmaz-e kisbetűket
-    if (/[a-z]/.test(password1)) {
-        // Megvizsgáljuk, tartalmaz-e nagybetűket
-        if (/[A-Z]/.test(password1)) {
-            // Megvizsgáljuk, tartalmaz-e speciális karaktereket
-            if (/[!@#$%^&*()_+{}\[\]:;<>,.?~\-]/.test(password1)) {
-                console.log("A jelszó megfelel a kritériumoknak.");
-            } else {
-                console.log("A jelszó nem tartalmaz speciális karaktereket.");
-            }
-        } else {
-            console.log("A jelszó nem tartalmaz nagybetűket.");
-        }
-    } else {
-        console.log("A jelszó nem tartalmaz kisbetűket.");
-    }
+if (num < 12 && num > 25){
+    console.log('A szám 12 és 25 között van.');
 } else {
-    console.log("A jelszó hossza nem megfelelő (legalább 9 karakter).");
+  console.log('A szám nem esik 12 és 25 közé.');
 }
+
+
+// Írj egy if-else utasítást annak megállapítására, hogy 2024 egy évszázados év-e vagy sem (00-val végződik).
+
+let year2 = 2024;
+
+if (year2 % 100 === 0) {
+    console.log('Az év évszázados év.');
+  } else {
+    console.log('Az év nem évszázados év.');
+  }
